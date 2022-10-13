@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body {
+    margin:0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width:100vw;
+    height: 100vh;
+    background: #708090;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vh;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1{
+    font-size:2vw;
+    text-align: center;
+    color:	#53a7ea;
+}
+
+.left-login-imagem{
+    width: 30vw;
+    padding: 0px 20px;
+}
+
+.right-login{
+    width: 50vh;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2f2841;
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color:#53a7ea;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin:10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border:none;
+    border-radius:10px;
+    padding: 15px;
+    background: #514869;
+    color:#f0ffffde;
+    font-size:12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color:#f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input ::placeholder{
+    color: #f0ffff94;
+}
+
+.btn-login{
+    width: 50%;
+    padding:7px 0px;
+    margin:25px;
+    border:none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color:#ffffff;
+    background:	#DCDCDC;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and(max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-imagem{
+        width: 50vh;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+}
+
+.btn-login:hover{
+    background:#53a7ea;
+}
